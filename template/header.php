@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><?php echo $this->get_title(); ?></title>
+	<title></title>
 	 <meta charset="utf-8">
    <link rel="shortcut icon" type="image/png" href="images/logo/cldh.png"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,34 +33,8 @@
  
 <nav class="navbar  navbar-expand-lg">
    
-        <a href="#" class="navbar-brand brand"> <img src="images/logo/cldh.png" height="40" width="50"> CLDH-EI</a>
-    <button class="navbar-toggler navbar-toggler-right cldh" type="button" id="open" data-toggle="collapse" data-target="#nav">
-        ☰
-    </button>
-  
-    <div class="navbar-collapse collapse" id="nav">
-    
-     <ul class="navbar-nav"> 
-       <?php
-       $this->createNavigation($navigation);
-     
-       ?>
-     </ul>
-     <ul class="navbar-nav ml-auto">
-          <?php $this->createNavigation($portal,"modal");?>
-     </ul>
-    
-   </div>
+      
 </nav>
 
-
-<?php
-  $this->Modal(array(
-    "id"=>"portal",
-    "title"=>"<img src='images/logo/cldh.png' height='40' width='50'> Welcome to the CLDH-EI",
-   
-    "body"=>"pages/pages_includes/form.php"
-  ));
-?>
 
 
